@@ -85,6 +85,12 @@ AI와 함께 "발산 → 선택 → 수렴" 순서로 더 좋은 크리에이티
 
 "이 작업에 대해 전혀 다른 방향 7개를 먼저 제안해줘. 최종 카피는 아직 쓰지 마. 각 방향마다 worldview, hook, CTA style, benchmark-fit note, risk를 포함해줘. 그 다음 score table로 top 2만 남기고, 1위만 인스타그램 카피로 수렴해줘. 마지막에는 Instagram compression pass까지 실행해서 preview_lines와 final_shortened_version도 함께 줘."
 
+Instagram compression pass에서 꼭 볼 것:
+- 첫 줄만 캡처해도 훅이 되는가
+- 첫 2줄 프리뷰 안에서 맥락이 서는가
+- 전략 설명 문장이 아니라 실제 전환 문장만 남았는가
+- CTA가 하나로 모였는가
+
 ### 예시 2) 카드뉴스 기획
 입력:
 - Topic: 봄철 레이저 시술 전후 주의사항
@@ -105,11 +111,44 @@ AI와 함께 "발산 → 선택 → 수렴" 순서로 더 좋은 크리에이티
 
 "랜딩 방향 7개를 제안해줘. final landing copy는 아직 쓰지 마. 각 방향마다 hero worldview, headline direction, proof strategy, CTA rhythm, benchmark-fit note, risk를 포함해줘. score table로 top 2만 남기고, 1위만 hero angle / hero headline / 4-section arc / proof strategy / CTA rhythm까지 수렴해줘."
 
+## 좋은 출력 vs 나쁜 출력
+
+### 나쁜 출력
+- 첫 답이 그럴듯하다고 바로 카피 3개 생성
+- benchmark 승자 문체를 거의 그대로 닮음
+- 방향 차이는 없고 수식어만 바뀜
+- CTA가 저장, DM, 링크 클릭 다 섞여 있음
+- 읽으면 똑똑해 보이는데 실제 피드에선 길고 무거움
+
+### 좋은 출력
+- 먼저 5~9개 방향을 진짜 다르게 탐색
+- benchmark는 구조만 참고하고 문장은 새로 씀
+- top 2만 남기고 왜 1등이 이기는지 설명 가능
+- 최종 카피는 한 줄 훅, 짧은 문단, 단일 CTA로 압축
+- 결과물이 "생성된 것"이 아니라 "선택된 것"처럼 느껴짐
+
 ## 빠른 시작
 
 아래 프롬프트 한 줄로 시작할 수 있습니다.
 
 "Generate 7 clearly different directions for this task. Do not produce the final deliverable yet. For each direction include worldview, hook, CTA style, benchmark-fit note, and risk. Then evaluate all directions with an explicit score table, keep only the top 2, and refine only the winner. Run an anti-fixation review before finalizing."
+
+## Instagram compression pass란?
+
+인스타그램 카피는 전략적으로 좋은 문장만으로는 부족합니다.
+최종 수렴 후 한 번 더 압축해야 합니다.
+
+목적:
+- 첫 줄 stop-scroll 강화
+- 첫 2줄 프리뷰 완성도 확보
+- 긴 전략 문장 제거
+- CTA 단일화
+- 피드 리듬에 맞는 짧은 문단화
+
+최종적으로 추가 반환하면 좋은 항목:
+- preview_lines
+- removed_sentences_or_ideas
+- final_shortened_version
 
 ---
 
