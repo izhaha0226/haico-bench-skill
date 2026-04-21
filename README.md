@@ -1,75 +1,106 @@
 # haico-bench-skill
 
-A public skill package for benchmark-aware Human-AI co-creation.
+A benchmark-aware Human-AI co-creation skill for creative work that must be both original and effective.
 
-This repository is designed for creative and marketing workflows where the biggest failure mode is not "lack of output," but premature convergence: people often accept the first plausible AI result, then spend the rest of the session polishing an anchored idea.
+This repository is built around one idea:
 
-haico-bench-skill addresses that problem by combining:
-- HAICo-style divergence → selection → convergence
-- benchmark-aware prompting
-- anti-fixation checks before final execution
+The enemy is not only bad output.
+The real enemy is premature convergence on the first plausible output.
+
+When that happens, benchmark-aware work becomes benchmark-shaped work.
+The result may be competent, but it is rarely memorable.
+
+haico-bench-skill is designed to stop that.
+
+## What this skill does
+
+It combines:
+- divergence-first ideation
+- benchmark-aware structural mapping
+- explicit direction scoring
+- controlled convergence
+- anti-fixation review before finalization
+
+The quality standard is not "usable."
+The quality standard is "worth sharing."
 
 ## Why this exists
 
-Most creative prompting fails in one of two ways:
-1. it asks for the final deliverable too early
-2. it uses benchmarks as copying targets rather than structural references
+Most creative prompting fails because it:
+1. asks for the final deliverable too early
+2. mistakes benchmark imitation for benchmark intelligence
+3. confuses variation with divergence
+4. polishes before choosing
 
-This repo treats AI as a co-creator for exploration first, and as a production engine only after a direction is selected.
+This repository treats AI as:
+- a co-creator during exploration
+- a judge during selection
+- a production engine only after a direction is chosen
 
 ## Core workflow
 
-1. Divergence
-   - generate 5-9 meaningfully distinct directions
-   - force distant analogies and non-obvious framings
-2. Benchmark mapping
-   - connect each direction to reusable benchmark structures
-   - never copy benchmark phrasing verbatim
-3. Selection
-   - compare ideas on distinctiveness, fit, execution ease, scalability
-4. Convergence
-   - refine only the chosen direction
-5. Anti-fixation check
-   - confirm the team explored enough before finalizing
+1. Framing
+2. Divergence
+3. Benchmark mapping
+4. Selection
+5. Convergence
+6. Anti-fixation review
 
 ## Repository structure
 
 - `SKILL.md` — main skill definition
 - `prompts/haico-bench-prompts.md` — reusable prompt sequence
-- `examples/marketing-copy.md` — example for copy/concept work
-- `examples/card-news.md` — example for card-news / multi-slide ideation
-- `references/further-reading.md` — papers and background references
+- `examples/marketing-copy.md` — copy / caption example
+- `examples/card-news.md` — card-news example
+- `examples/landing-concept.md` — landing concept example
+- `examples/thumbnail.md` — thumbnail ideation example
+- `examples/campaign-strategy.md` — campaign strategy example
+- `examples/haico-example-updated.md` — compact worked example from Chief/OpenClaw practice
+- `references/failure-modes.md` — known failure patterns
+- `references/scoring-rubric.md` — explicit evaluation model
+- `references/output-schema.md` — standardized output packaging
+- `references/further-reading.md` — background reading and papers
 
 ## What this skill is for
 
-- marketing concepts
 - ad creatives
 - campaign hooks
-- card news
-- thumbnails
 - landing concepts
-- early-stage content strategy
+- thumbnails
+- card news
+- branded copy systems
+- concept decks
+- benchmark-aware content strategy
 
 ## What this skill is not for
 
-- direct plagiarism from competitors
+- direct competitor imitation
 - one-shot final-output prompting
-- benchmark imitation disguised as strategy
+- cosmetic rewrites of benchmark winners
+- safe-but-generic category language presented as originality
 
 ## Benchmark safety rules
 
 Allowed:
 - hook structure
-- CTA structure
-- tone density
+- CTA rhythm
+- tonal density
+- pacing logic
 - format preference
-- information rhythm
+- information ordering
 
 Disallowed:
 - verbatim competitor phrasing
-- near-duplicate sentence patterns
-- brand-specific slogans or claims
-- benchmark outputs used as direct copy material
+- near-duplicate sentence skeletons
+- recognizable competitor slogans
+- signature campaign logic copied with synonyms
+- benchmark outputs used as raw copy source
+
+## Design principle
+
+Different before better.
+Chosen before polished.
+Benchmark-aware before benchmark-shaped.
 
 ## Quick start
 
@@ -77,30 +108,20 @@ Use the prompt sequence in `prompts/haico-bench-prompts.md`.
 
 Minimal starter:
 
-"Give me 7 clearly different creative directions for this task. Do not produce the final deliverable yet. For each direction include metaphor, hook, CTA style, channel fit, benchmark-fit note, and risk. Then compare and rank the top 2 before refining only the winner."
+"Generate 7 clearly different directions for this task. Do not produce the final deliverable yet. For each direction include worldview, hook, CTA style, benchmark-fit note, and risk. Then evaluate all directions with an explicit score table, keep only the top 2, and refine only the winner. Run an anti-fixation review before finalizing."
 
-## Example applications
+## Practical recommendation
 
-- a social campaign concept informed by top-performing benchmark hooks
-- a card-news narrative structure aligned with category benchmark rhythm
-- a thumbnail angle exploration workflow before visual production
-- a landing-page headline exploration workflow before copywriting
-
-## Design principle
-
-The main idea is simple:
-
-Different before better.
-
-Do not optimize an idea before proving it deserves optimization.
+If the output already feels good on the first pass, be more suspicious, not less.
+That often means fixation pressure has already started.
 
 ## References
 
-See `references/further-reading.md` for papers on:
-- design fixation
-- divergent/convergent ideation
-- human-AI co-creation
-- benchmark-aware creative workflows
+Use the `references/` folder if you need:
+- failure diagnosis
+- stronger selection discipline
+- standardized output packaging
+- research context for design fixation and Human-AI co-creation
 
 ## License
 
